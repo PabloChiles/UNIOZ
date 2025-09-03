@@ -10,3 +10,16 @@ function mostrarSenha() {
         btnShowPass.classList.replace('bi-eye-slash','bi-eye-fill')
     }
 }
+
+let passwords = document.querySelectorAll('.pass');
+        let checkbox = document.getElementById('checkbox');
+
+            checkbox.onclick = function(){
+                passwords.forEach(function(passwords) {
+                    if (checkbox.checked) {
+                        passwords.type = 'text';
+                    }else {
+                        passwords.type = 'password';
+                    }
+                });
+            }

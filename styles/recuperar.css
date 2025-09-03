@@ -1,68 +1,141 @@
-body{
-display: flex;
-justify-content: space-around;
-font-family: var(--fonte-principal);
-margin: 80px;
+body {
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--fonte-principal);
+    margin: 35px 50px 30px 50px;
+    overflow: hidden;
 }
 
 .right {
-display: flex;
-flex-direction: column;
-align-items: center;
-color: white;
-font-size: 25px;
-font-weight: bold;
-}
-
-.left{
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-around;
 }
 
-.left img{
+.left img {
     width: 300px;
 }
 
-.left h1{
+.left h1 {
     color: white;
     font-size: 45px;
     font-weight: bold;
 }
 
-.container::placeholder{
+.container::placeholder {
     color: white
 }
 
-.container{
+.container {
     text-align: center;
     background-color: transparent;
     border: 1px solid white;
     color: white;
     border-radius: 15px;
-    padding: 1em;    
+    padding: 1em;
     width: 400px;
     height: 20px;
     margin-top: 20px;
 }
 
-button{
-    margin-top: 20px;
+button {
+    position: relative;
+    margin: 20px 0 30px 70px;
     font-size: 20px;
     border-color: #003052;
     border-radius: 20px;
     background-color: #00243e;
-    width: 150px;   
+    width: 150px;
     padding: 10px;
     border: 2px solid #18496D;
     color: white;
     font-family: var(--fonte-principal);
-    margin-left: 10px;
 }
 
-button:hover{
+button:hover {
     transition: 0.15s;
     transform: scale(1.10);
     cursor: pointer;
+}
+
+.login::placeholder {
+    color: white;
+    font-family: var(--fonte-principal);
+    background: url(/img/ra.svg) no-repeat;
+    background-size: 25px;
+    background-position: 0.5em;
+    text-align: center;
+}
+
+.email::placeholder {
+    color: white;
+    font-family: var(--fonte-principal);
+    background: url(/img/email.svg) no-repeat;
+    background-size: 25px;
+    background-position: 0.5em;
+    text-align: center;
+}
+
+.tell::placeholder {
+    color: white;
+    font-family: var(--fonte-principal);
+    background: url(/img/tell.svg) no-repeat;
+    background-size: 25px;
+    background-position: 0.5em;
+    text-align: center;
+}
+
+.senha::placeholder {
+    color: white;
+    font-family: var(--fonte-principal);
+    background: url(/img/Lock.svg) no-repeat;
+    background-size: 25px;
+    background-position: 0.5em;
+    text-align: center;
+}
+
+.newsenha::placeholder {
+    color: white;
+    font-family: var(--fonte-principal);
+    background: url(/img/Lock.svg) no-repeat;
+    background-size: 25px;
+    background-position: 0.5em;
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    margin-left: 80px;
+}
+
+.right p {
+    margin: 40px 0 0 40px;
+    font-family: var(--fonte-principal);
+    font-size: 12px;
+}
+
+.mostrar__senha {
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+}
+
+.mostrar__senha p {
+    margin: 40px 0 0 0;
+}
+
+.botoes input {
+    margin: 0 0 11px 0;
 }
