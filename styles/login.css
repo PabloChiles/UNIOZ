@@ -140,5 +140,6 @@ body {
     cursor: pointer;
     color: white;
     position: absolute;
+    display: block;
     right: 33%;
 }

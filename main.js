@@ -22,4 +22,4 @@ let passwords = document.querySelectorAll('.pass');
                         passwords.type = 'password';
                     }
                 });
-            }
+}
