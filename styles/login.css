@@ -1,9 +1,7 @@
-
-
 body {
     background: var(--cor-de-fundo);
-    overflow: hidden;
     margin-bottom: 20px ;
+    overflow: hidden;
 }
 
 .login {

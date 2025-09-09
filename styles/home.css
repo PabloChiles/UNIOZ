@@ -2,6 +2,7 @@ body{
     font-family: var(--fonte-principal);
     font-size: 10px;
     color: white ;
+    overflow: hidden;
 }
 
 header{
@@ -121,26 +122,61 @@ header a{
 .called {
     margin: 0;
     display: flex;
-    justify-content: space-around;  
-    padding: 10px 0 150px 0;
+    padding: 10px 0 100% 0;
     background-color: #EBECEE;
     color: black;
+    text-align: center;
+    position: relative;
 }
 
 .linha-vertical {
-    border-left: 1.5px solid black;
+    border-left: 1px solid black;
     height: 200px;
 }
 
-.linha-horizontal {
-    border-top: 1px solid black;
-    width: 1200px;
-    margin-top: 30px;
-    position: absolute;
-}
 
 .called__container h3 {
     padding-top: 8px;
     font-size: 12px;
     font-weight: 500;
+}
+
+.bk-title {
+    width: 233px;
+}   
+
+.bk-text {
+    width: 150px;
+}
+
+.called__texts {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+.status-img {
+    width: 13px;
+    height: 13px;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.chat {
+    width: 40px;
+    height: 40px;
+    position: absolute;     
+    margin: 150px 30px 0 1080px;
+    background-color: #002F52;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-img {
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    background-image: url(/img/robot.svg);
 }
